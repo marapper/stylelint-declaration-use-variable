@@ -1,6 +1,6 @@
 var stylelint = require('stylelint');
 
-var ruleName = 'declaration-use-variable/check-declarations';
+var ruleName = 'property-values/use-variable';
 
 var messages = stylelint.utils.ruleMessages(ruleName, {
     expected: function expected(property) {
