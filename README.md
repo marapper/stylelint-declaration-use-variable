@@ -29,7 +29,7 @@ Like so:
   ],
   "rules": {
     // ...
-    "sh-waqar/declaration-use-variable": "color",
+    "declaration-use-variable/check-declarations": "color",
     // ...
   }
 }
@@ -43,7 +43,7 @@ Multiple properties can be watched by passing them inside array. Regex can also 
 // .stylelintrc
 "rules": {
   // ...
-  "sh-waqar/declaration-use-variable": [["/color/", "z-index", "font-size"]],
+  "declaration-use-variable/check-declarations": [["/color/", "z-index", "font-size"]],
   // ...
 }
 ```
@@ -56,7 +56,7 @@ Passing a regex will watch the variable usage for all matching properties. This 
 // .stylelintrc
 "rules": {
   // ...
-  "sh-waqar/declaration-use-variable": "/color/",
+  "declaration-use-variable/check-declarations": "/color/",
   // ...
 }
 ```
@@ -69,7 +69,7 @@ Passing `ignoreValues` option, you can accept values which are exact same string
 // .stylelintrc
 "rules": {
   // ...
-  "sh-waqar/declaration-use-variable": [["/color/", "font-size", { ignoreValues: ["transparent", "inherit", "/regexForspecialFunc/"] }]],
+  "declaration-use-variable/check-declarations": [["/color/", "font-size", { ignoreValues: ["transparent", "inherit", "/regexForspecialFunc/"] }]],
   // ...
 }
 ```

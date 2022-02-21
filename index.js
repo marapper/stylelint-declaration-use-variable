@@ -1,6 +1,6 @@
 var stylelint = require('stylelint');
 
-var ruleName = 'sh-waqar/declaration-use-variable';
+var ruleName = 'declaration-use-variable/check-declarations';
 
 var messages = stylelint.utils.ruleMessages(ruleName, {
     expected: function expected(property) {
@@ -63,7 +63,7 @@ function checkValue(val, exceptions = []) {
 /**
  * Checks the value and if its present in variables object
  * returns the respective variable
- * 
+ *
  * @param  {string}
  * @return {string|bool}
  */
@@ -110,7 +110,7 @@ function checkProp(prop, value, targets) {
     }
     return false;
 }
-   
+
 /**
  * Checks the test expression with css declaration
  *
