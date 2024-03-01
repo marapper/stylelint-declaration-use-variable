@@ -1,6 +1,6 @@
 {
   "name": "stylelint-property-values",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "A stylelint custom rule to check the use of scss variable on declaration.",
   "main": "index.js",
   "scripts": {
